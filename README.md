@@ -6,6 +6,14 @@ This is a clean, responsive, and interactive profile card built using *HTML, CSS
 
 ---
 
+## 🖼 Project Preview
+
+Here’s a preview of the Profile Card design:
+
+![Profile Card Preview](./ProfileCard.jpg)
+
+---
+
 ## What You’ll Find in This Project
 
 - *Circular avatar* that remains proportional on all devices.
@@ -29,3 +37,4 @@ To run this project on your computer, follow these steps:
 ```bash
 
 git clone https://github.com/L1a6/profile-card.git
+
