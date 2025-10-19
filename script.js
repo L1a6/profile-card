@@ -1,18 +1,16 @@
-// ================================
 // Live Time Update (Milliseconds)
-// ================================
+
 function updateTime() {
   const timeElement = document.getElementById('userTime');
   if (timeElement) {
-    timeElement.textContent = Date.now(); // show milliseconds
+    timeElement.textContent = Date.now(); 
   }
 }
 updateTime();
 setInterval(updateTime, 1000);
 
-// ================================
 // Subtle Hover Glow for Social Icons Only
-// ================================
+
 const socialIcons = document.querySelectorAll('.social-link');
 
 socialIcons.forEach(icon => {
@@ -25,4 +23,5 @@ socialIcons.forEach(icon => {
     icon.style.boxShadow = '';
     icon.style.transform = '';
   });
+
 });
