@@ -27,4 +27,5 @@ To run this project on your computer, follow these steps:
 1. *Clone the repository*:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+
+git clone https://github.com/L1a6/profile-card.git
