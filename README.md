@@ -1,4 +1,4 @@
-# Ultramodern Profile Card
+# Profile Card - Stage 0 (Frontend Wizards, HNG13)
 
 Welcome to my Ultramodern Profile Card project! 🎨
 
@@ -37,4 +37,5 @@ To run this project on your computer, follow these steps:
 ```bash
 
 git clone https://github.com/L1a6/profile-card.git
+
 
