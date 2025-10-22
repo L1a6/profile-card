@@ -257,12 +257,19 @@ body {
   border-radius: 12px;
   display: flex;
   align-items: center;
-  text-align: left;
   gap: 10px;
   color: var(--text);
   transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
   cursor: default;
+  justify-content: flex-start;
+  text-align: left !important;
+  flex-wrap: wrap; 
+  gap: 8px;
+  width: 100%;
+  line-height: 1.4;
+  white-space: normal;
 }
+
 .simple-list li:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 24px var(--blue-glow);
@@ -280,14 +287,6 @@ body {
   .avatar-details { align-items: center; text-align: center; }
   .social-list { justify-content: center; flex-wrap: wrap; }
   .lists { flex-direction: column; gap: 16px; justify-content: center; align-items: center; }
-}
-
-@media (max-width: 767px) {
-  .simple-list li {
-    text-align: left !important;
-    width: 100%;
-    word-wrap: break-word;
-  }
 }
 
 /* Footer note */

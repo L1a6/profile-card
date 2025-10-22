@@ -1,4 +1,4 @@
-// Live Time Update (Milliseconds)
+// Live Time Update in Milliseconds
 
 function updateTime() {
   const timeElement = document.getElementById('userTime');
