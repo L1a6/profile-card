@@ -428,7 +428,6 @@ body {
 .about-section:nth-of-type(4) { animation-delay: 2.8s; }
 .about-section:nth-of-type(5) { animation-delay: 3.4s; }
 
-
 @media (max-width: 768px) {
   .about-section {
     padding: 14px 16px;
@@ -459,5 +458,234 @@ body {
     margin-top: 300px; 
     margin-bottom: 40px; 
     max-width: 900px; 
+  }
+}
+
+/* Contact Section Styles */
+
+body {
+  background: #0f172a;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 24px;
+  border-radius: var(--radius);
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 6px 24px rgba(56, 189, 248, 0.12);
+  animation: fadeIn 1s ease forwards;
+}
+
+.contact-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #7dd3fc, #bae6fd, #7dd3fc);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 6px;
+  animation: shimmer 8s infinite linear, fadeIn 1s forwards;
+   text-align: center;
+}
+
+.contact-header .tagline {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  margin-bottom: 24px;
+  animation: fadeIn 1.2s forwards;
+   text-align: center;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeInSection 0.8s forwards;
+}
+
+.form-section:nth-child(1) { animation-delay: 0.2s; }
+.form-section:nth-child(2) { animation-delay: 0.4s; }
+.form-section:nth-child(3) { animation-delay: 0.6s; }
+.form-section:nth-child(4) { animation-delay: 0.8s; }
+.form-section:nth-child(5) { animation-delay: 1s; }
+
+label {
+  margin-bottom: 4px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+input, textarea {
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(230, 235, 245, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  color: #e6ebf5;
+  font-size: 0.88rem;
+  transition: border 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+  background: rgba(56, 189, 248, 0.05);
+  box-shadow: 0 0 12px rgba(56,189,248,0.3);
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.error {
+  color: #f87171;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.success-message {
+  color: #22c55e;
+  font-size: 0.9rem;
+  margin-top: 12px;
+}
+
+/* Base style matches Back to Profile button */
+.modern-button {
+  position: relative;
+  padding: 12px 28px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.06); /* glassy, transparent base */
+  color: #e6eef8;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+  transition: transform 0.28s ease, box-shadow 0.28s ease, background-color 0.28s ease;
+  box-shadow: 0 6px 20px rgba(255,255,255,0.08);
+}
+
+/* Hover effect — subtle lift + glow */
+.modern-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(91,192,235,0.18);
+  background: rgba(255,255,255,0.12);
+}
+
+/* Focus visible */
+.modern-button:focus {
+  outline: 3px solid rgba(91,192,235,0.18);
+}
+
+/* Base button — already exists in your code */
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.06);
+  color: #e6eef8;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+  transition: transform 0.28s ease, box-shadow 0.28s ease, background-color 0.28s ease;
+  box-shadow: 0 6px 20px rgba(255,255,255,0.08);
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(91,192,235,0.18);
+  background: rgba(255,255,255,0.12);
+}
+
+/* Special shimmer for only the Send Message button */
+.btn.send-message::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -90%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0) 0%,
+    rgba(91,192,235,0.55) 50%, /* soft cyan shimmer */
+    rgba(255,255,255,0) 100%
+  );
+  transform: skewX(-25deg);
+  pointer-events: none;
+  animation: btnGlimmer 1.5s infinite; /* frequent visible shimmer */
+}
+
+/* Media Queries and Keyframes */
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInSection {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .card {
+    width: 80%;
+    padding: 30px;
+    gap: 1.5rem;
+  }
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  .content {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  .avatar {
+    width: 200px;
+    height: 200px;
+  }
+
+  .content {
+    max-width: 50%;
   }
 }

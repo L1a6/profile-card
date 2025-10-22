@@ -2,7 +2,7 @@
 
 Welcome to my Ultramodern Profile Card project! 🎨
 
-This is a clean, responsive, and interactive profile card built using *HTML, CSS, and vanilla JavaScript*. The card is designed to showcase a user's avatar, bio, hobbies, dislikes, and social links in a visually appealing and accessible way. It adapts seamlessly to mobile, tablet, and desktop screens, keeping the layout elegant and readable at all sizes.
+This is a clean, responsive, and interactive profile card built using HTML, CSS, and vanilla JavaScript. The card is designed to showcase a user's avatar, bio, hobbies, dislikes, and social links in a visually appealing and accessible way. It adapts seamlessly to mobile, tablet, and desktop screens, keeping the layout elegant and readable at all sizes.
 
 ---
 
@@ -16,15 +16,29 @@ Here’s a preview of the Profile Card design:
 
 ## What You’ll Find in This Project
 
-- *Circular avatar* that remains proportional on all devices.
-- *Hover and focus animations* with subtle glowing effects to give life to the card.
-- *Dynamic time display* in milliseconds, reflecting the current moment.
-- *Social links* (Twitter/X, GitHub, LinkedIn) opening in new tabs safely.
-- *Hobbies and dislikes* listed clearly with visual markers.
-- Fully *keyboard-accessible* and semantic HTML for accessibility.
-- *Glassmorphic design* using gradients, transparency, and blur effects for a modern feel.
+- Circular avatar that remains proportional on all devices.
+- Hover and focus animations with subtle glowing effects to give life to the card.
+- Dynamic time display in milliseconds, reflecting the current moment.
+- Social links (Twitter/X, GitHub, LinkedIn) opening in new tabs safely.
+- Hobbies and dislikes listed clearly with visual markers.
+- Fully keyboard-accessible and semantic HTML for accessibility.
+- Glassmorphic design using gradients, transparency, and blur effects for a modern feel.
 
 This project was built as part of a Frontend learning challenge, but everything here reflects real-world responsive and accessible design principles.
+
+---
+
+## Additional Pages
+
+### About Me
+The About Me page presents a clean and modern layout that introduces the developer, Larry David.  
+It highlights his background, design approach, and personal focus areas.  
+The section features glassmorphic visuals, balanced text alignment, and subtle fade-in animations for readability and personality.
+
+### Contact Us
+The Contact Us page includes a simple, elegant contact form that allows visitors to reach out.  
+It uses the same glassmorphic theme for consistency, featuring smooth field animations and a soft cyan "Send Message" button with a glimmer effect.  
+A “Back to Profile” button is placed at the bottom for easy navigation back to the main profile card.
 
 ---
 
@@ -32,10 +46,7 @@ This project was built as part of a Frontend learning challenge, but everything 
 
 To run this project on your computer, follow these steps:
 
-1. *Clone the repository*:
+1. Clone the repository:
 
 ```bash
-
 git clone https://github.com/L1a6/profile-card.git
-
-
