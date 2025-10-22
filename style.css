@@ -1,7 +1,5 @@
-/* Import font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
 
-/* Root variables */
 :root {
   --bg-1: #060a13;
   --bg-2: #0a101d;
@@ -37,10 +35,10 @@ body {
   color: var(--text);
   min-height: 100vh;
   display: flex;
-  align-items: center; /* Vertical center desktop */
-  justify-content: center; /* Horizontal center */
+  align-items: center; 
+  justify-content: center;
   padding: 16px;
-  overflow-y: auto; /* Fix mobile cut-off */
+  overflow-y: auto; 
 }
 
 /* Page shell */
@@ -123,7 +121,7 @@ body {
   flex-direction: column;
   gap: 6px;
   text-align: center;
-  align-items: center; /* center text in mobile */
+  align-items: center; 
 }
 
 /* Frontend role */
@@ -259,6 +257,7 @@ body {
   border-radius: 12px;
   display: flex;
   align-items: center;
+  text-align: left;
   gap: 10px;
   color: var(--text);
   transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
@@ -281,6 +280,14 @@ body {
   .avatar-details { align-items: center; text-align: center; }
   .social-list { justify-content: center; flex-wrap: wrap; }
   .lists { flex-direction: column; gap: 16px; justify-content: center; align-items: center; }
+}
+
+@media (max-width: 767px) {
+  .simple-list li {
+    text-align: left !important;
+    width: 100%;
+    word-wrap: break-word;
+  }
 }
 
 /* Footer note */
@@ -323,7 +330,7 @@ body {
   color: #fff;
 }
 
-/* Add glimmer animation */
+/* Add Cyan colour to about h1*/
 .about-header h1 {
   background: linear-gradient(90deg, #7dd3fc, #bae6fd, #7dd3fc);
   background-clip: text;
@@ -556,78 +563,6 @@ textarea {
   margin-top: 12px;
 }
 
-/* Base style matches Back to Profile button */
-.modern-button {
-  position: relative;
-  padding: 12px 28px;
-  border-radius: 16px;
-  border: 1px solid rgba(255,255,255,0.12);
-  background: rgba(255,255,255,0.06); /* glassy, transparent base */
-  color: #e6eef8;
-  font-weight: 600;
-  font-size: 1rem;
-  cursor: pointer;
-  overflow: hidden;
-  backdrop-filter: blur(8px);
-  transition: transform 0.28s ease, box-shadow 0.28s ease, background-color 0.28s ease;
-  box-shadow: 0 6px 20px rgba(255,255,255,0.08);
-}
-
-/* Hover effect — subtle lift + glow */
-.modern-button:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(91,192,235,0.18);
-  background: rgba(255,255,255,0.12);
-}
-
-/* Focus visible */
-.modern-button:focus {
-  outline: 3px solid rgba(91,192,235,0.18);
-}
-
-/* Base button — already exists in your code */
-.btn {
-  position: relative;
-  display: inline-block;
-  padding: 12px 28px;
-  border-radius: 16px;
-  border: 1px solid rgba(255,255,255,0.12);
-  background: rgba(255,255,255,0.06);
-  color: #e6eef8;
-  font-weight: 600;
-  font-size: 1rem;
-  cursor: pointer;
-  overflow: hidden;
-  backdrop-filter: blur(8px);
-  transition: transform 0.28s ease, box-shadow 0.28s ease, background-color 0.28s ease;
-  box-shadow: 0 6px 20px rgba(255,255,255,0.08);
-}
-
-.btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(91,192,235,0.18);
-  background: rgba(255,255,255,0.12);
-}
-
-/* Special shimmer for only the Send Message button */
-.btn.send-message::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -90%;
-  width: 60%;
-  height: 100%;
-  background: linear-gradient(
-    120deg,
-    rgba(255,255,255,0) 0%,
-    rgba(91,192,235,0.55) 50%, /* soft cyan shimmer */
-    rgba(255,255,255,0) 100%
-  );
-  transform: skewX(-25deg);
-  pointer-events: none;
-  animation: btnGlimmer 1.5s infinite; /* frequent visible shimmer */
-}
-
 /* Media Queries and Keyframes */
 
 @keyframes fadeIn {
@@ -642,11 +577,6 @@ textarea {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-@keyframes shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
 }
 
 @media (max-width: 768px) {
@@ -689,3 +619,4 @@ textarea {
     max-width: 50%;
   }
 }
+
