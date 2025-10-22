@@ -31,8 +31,7 @@ This project was built as part of a Frontend learning challenge, but everything 
 ## Additional Pages
 
 ### About Me
-The About Me page presents a clean and modern layout that introduces the developer, Larry David.  
-It highlights his background, design approach, and personal focus areas.  
+The About Me page presents a clean and modern layout that introduces the developer and it highlights his background, design approach, and personal focus areas.  
 The section features glassmorphic visuals, balanced text alignment, and subtle fade-in animations for readability and personality.
 
 ### Contact Us
@@ -51,3 +50,4 @@ To run this project on your computer, follow these steps:
 ```bash
 
 git clone https://github.com/L1a6/profile-card.git
+
