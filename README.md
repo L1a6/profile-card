@@ -1,4 +1,4 @@
-# Profile Card - Stage 0 (Frontend Wizards, HNG13)
+# Profile Card - Stage 1 (Frontend Wizards, HNG13)
 
 Welcome to my Ultramodern Profile Card project! 🎨
 
@@ -37,7 +37,7 @@ The section features glassmorphic visuals, balanced text alignment, and subtle f
 
 ### Contact Us
 The Contact Us page includes a simple, elegant contact form that allows visitors to reach out.  
-It uses the same glassmorphic theme for consistency, featuring smooth field animations and a soft cyan "Send Message" button with a glimmer effect.  
+It uses the same glassmorphic theme for consistency, featuring smooth field animations.  
 A “Back to Profile” button is placed at the bottom for easy navigation back to the main profile card.
 
 ---
@@ -49,4 +49,5 @@ To run this project on your computer, follow these steps:
 1. Clone the repository:
 
 ```bash
+
 git clone https://github.com/L1a6/profile-card.git
